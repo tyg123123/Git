@@ -47,6 +47,7 @@ public class Myconfig1 extends JFinalConfig{
     }
 
     public void configInterceptor(Interceptors interceptors) {
+        //哈哈哈哈哈哈
 
     }
 
