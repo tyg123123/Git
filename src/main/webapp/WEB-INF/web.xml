@@ -1,0 +1,20 @@
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+  <display-name>Archetype Created Web Application</display-name>
+
+  <filter>
+    <filter-name>jFinal</filter-name>
+    <filter-class>com.jfinal.core.JFinalFilter</filter-class>
+    <!--如出现报错，则要引用servlet依赖-->
+    <init-param>
+      <param-name>configClass</param-name>
+      <param-value>com.zking.config.Myconfig</param-value>
+    </init-param>
+  </filter>
+  <filter-mapping>
+    <filter-name>jFinal</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+</web-app>
